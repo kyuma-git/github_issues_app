@@ -1,0 +1,50 @@
+{
+    "url": "https://api.github.com/repos/rails/rails/issues/39921",
+    "repository_url": "https://api.github.com/repos/rails/rails",
+    "labels_url": "https://api.github.com/repos/rails/rails/issues/39921/labels{/name}",
+    "comments_url": "https://api.github.com/repos/rails/rails/issues/39921/comments",
+    "events_url": "https://api.github.com/repos/rails/rails/issues/39921/events",
+    "html_url": "https://github.com/rails/rails/issues/39921",
+    "id": 665167157,
+    "node_id": "MDU6SXNzdWU2NjUxNjcxNTc=",
+    "number": 39921,
+    "title": "Vips::Error: No known saver for '/tmp/image_processing20200724-11554-lsl5p1.jfif'",
+    "user": {
+      "login": "johan-smits",
+      "id": 3228882,
+      "node_id": "MDQ6VXNlcjMyMjg4ODI=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3228882?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/johan-smits",
+      "html_url": "https://github.com/johan-smits",
+      "followers_url": "https://api.github.com/users/johan-smits/followers",
+      "following_url": "https://api.github.com/users/johan-smits/following{/other_user}",
+      "gists_url": "https://api.github.com/users/johan-smits/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/johan-smits/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/johan-smits/subscriptions",
+      "organizations_url": "https://api.github.com/users/johan-smits/orgs",
+      "repos_url": "https://api.github.com/users/johan-smits/repos",
+      "events_url": "https://api.github.com/users/johan-smits/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/johan-smits/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-24T13:24:55Z",
+    "updated_at": "2020-07-24T13:27:33Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "### Steps to reproduce\r\n<!-- (Guidelines for creating a bug report are [available\r\nhere](https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#creating-a-bug-report)) -->\r\n```ruby\r\nclass SomeModel < ApplicationRecord\r\n  has_one_attached :file\r\nend\r\n\r\nmodel = SomeModel.create!\r\nmodel.file.attach(io: File.open('image.jfif'), filename: 'image.jfif', content_type: 'image/jpeg')\r\nmodel.file.representation({resize_to_fit: [1920, 1920]}).processed\r\n```\r\n\r\n### Expected behavior\r\nGenerate a representation\r\n\r\n### Actual behavior\r\n```\r\nError:\r\nCollectionTest#test_jfif_file_format:\r\nVips::Error: No known saver for '/tmp/image_processing20200724-11554-lsl5p1.jfif'.\r\n```\r\n\r\n### System configuration\r\n**Rails version**: 6.0.3.1\r\n\r\n**Ruby version**: 2.5.1p57\r\n\r\nUsed image: [image.zip](https://github.com/rails/rails/files/4972128/image.zip)\r\n",
+    "performed_via_github_app": null
+  }
