@@ -12,7 +12,7 @@
 		4E57A3F524C9173E008C0324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E57A3F324C9173E008C0324 /* Main.storyboard */; };
 		4E57A3F724C9173F008C0324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E57A3F624C9173F008C0324 /* Assets.xcassets */; };
 		4E57A3FA24C9173F008C0324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E57A3F824C9173F008C0324 /* LaunchScreen.storyboard */; };
-		4E6B5EF224E2733400BC232D /* CellDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5EF124E2733400BC232D /* CellDataEntity.swift */; };
+		4E6B5EF224E2733400BC232D /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5EF124E2733400BC232D /* TopViewModel.swift */; };
 		4E6B5EF424E2749000BC232D /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B5EF324E2749000BC232D /* ItemRepository.swift */; };
 		4ECCF99C24CB188000CB7927 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECCF99B24CB188000CB7927 /* Alamofire.framework */; };
 		4ECCF99D24CB188000CB7927 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECCF99B24CB188000CB7927 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,7 +41,7 @@
 		4E57A3F624C9173F008C0324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E57A3F924C9173F008C0324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E57A3FB24C9173F008C0324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E6B5EF124E2733400BC232D /* CellDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDataEntity.swift; sourceTree = "<group>"; };
+		4E6B5EF124E2733400BC232D /* TopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModel.swift; sourceTree = "<group>"; };
 		4E6B5EF324E2749000BC232D /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
 		4ECCF99B24CB188000CB7927 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = github_issues_list_app/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		4ECCF9A024CEC83300CB7927 /* ShowPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPageViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		4E6B5EF024E2670900BC232D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4E6B5EF324E2749000BC232D /* ItemRepository.swift */,
+				4E6B5EF124E2733400BC232D /* TopViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 		4E6B5EF524E277B100BC232D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4E6B5EF124E2733400BC232D /* CellDataEntity.swift */,
+				4E6B5EF324E2749000BC232D /* ItemRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			files = (
 				4E57A3F224C9173E008C0324 /* TopViewController.swift in Sources */,
 				4E57A3EE24C9173E008C0324 /* AppDelegate.swift in Sources */,
-				4E6B5EF224E2733400BC232D /* CellDataEntity.swift in Sources */,
+				4E6B5EF224E2733400BC232D /* TopViewModel.swift in Sources */,
 				4ECCF9A124CEC83300CB7927 /* ShowPageViewController.swift in Sources */,
 				4E6B5EF424E2749000BC232D /* ItemRepository.swift in Sources */,
 			);

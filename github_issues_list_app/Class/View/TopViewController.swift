@@ -9,10 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     @IBOutlet private weak var tableView: UITableView!
     let api = ItemRepository()
  
-    private var tableDataSources: [CellData] = []
+    private var tableDataSources: [TopViewModel.CellData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
